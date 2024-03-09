@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--DOCTYPEは何の記述なのかを宣言するタグです-->
+
+<html>
+
+<head>
+<!--headは検索エンジンやブラウザに向けた情報です-->
+
+<title>天気予報</title>
+  <!--titleはWEBページの名前の部分になります-->
+
+    <meta name="description"  content="毎日の気象情報をお知らせします">
+  <!--上記はW WEB上での説明の補足部分となります-->
+
+  <meta charset="utf-8">
+  <!--上記は文字化けを防ぐタグです-->
+</head>
+
+
+
+
+
+
+<body>
+<!--bodyはbodyはWebページの訪問者に向けたコンテンツになります-->
+
+  <header>
+   <h1>ヘッダーにメニューボタンを作成</h1>
+   
+    <nav>
+      <a href="HTML.html">ホーム</a>
+      <a href="https://www.google.com/?hl=ja">グーグルWEBサイト</a>
+      <a href="https://www.tsuchiya-group.co.jp/">槌屋WEBサイト</a>
+      <!--navでWEBサイト内にリンク付きのボタンを表示-->
+
+
+
+<br>      
+      <h1>見出し１記述するタグです</h1>
+      <h2>見出し２記述するタグです</h2>
+      <p>文字を記述するタグになります_項目の説明文になります</p>
+    </header>
+
+
+
+
+  <main>
+
+  <article>
+    <!--aricleで記事を書く場所を記述-->
+    <section>
+      <!--sectionでテーマごとに記事を区切り記入する-->
+      <h2>記事１</h2>
+      <p>記事の説明</p>
+    </section>
+
+    <section>
+      <h2>記事２</h2>
+      <p>記事２の説明</p>
+    </section>
+  </article>
+
+
+  <br>
+  <br>
+
+      <ul>
+        <li>・をつけて項目を出します1</li>
+        <li>・をつけて項目を出します2</li>
+      </ul>
+<br>
+
+      <ol>
+        <li>番号をつけて項目を出します1</li>
+        <li>番号をつけて項目を出します２</li>
+      </ol>
+<!--・か数字の項目を出力します-->
+
+<br>
+
+        <hr>
+      <!--hrは線をつけるタグになります-->
+<br>      
+      <br>
+      <!--brタグは改行のタグになります-->
+<br>      
+      <div>
+      </div>
+      <!--divタグはグループ化させるタグです-->
+<br> 
+      
+      <table  border="1">
+        <tr>
+          <th>平日</th>
+          <th>休日</th>
+        </tr>
+        <tr>
+          <td>仕事</td>
+          <td>休み</td>
+        </tr>
+       </table> 
+        <!--tableタグで表を作ります-->
+        <!--trタグは行になり、thタグがタイトル、tdタグがセルになります-->
+ <br>   
+
+        <img src="https://www.sejuku.net/assets/images/logo.svg">
+        <img src="../assets/images/logo.svg">
+        <!--imgは画像の出力、srcで開く場所を決める-->
+        <!--絶対パス（上）はその場所を指定する、相対パス（下）は現在開いているファイルから開くファイルを指定する-->
+
+<br>        
+
+        <a href="https://www.google.com/?hl=ja">グーグルホームページ</a>
+          <!--aタグはハイパーリンクタグ-->
+
+<br>
+<br>
+      <form>
+      <!--フォームを作成する場合は、formタグの中に各タグを入力します-->
+      <label>フォーム内の項目名となります</label><input type="text" placeholder="例をチェックボックスに出力"><br>
+     <!--上記は記述のみのフォーム-->
+     
+<br>
+
+     <select>
+      <label>選択フォーム</label>
+      <option>選択肢１</option> 
+      <option>選択肢２</option>
+      <option>選択肢３</option>
+      </select>
+      <!--上記フォームはプルダウン式の選択フォームになります-->
+      
+<br>
+
+    <label>複数行の文字を入力できるフォームです</label>
+    <textarea></textarea>
+    <!--複数行の文字を入力できるフォームになります-->
+      
+<br>
+
+      <label>男性</label><input type="radio"  name="gender">
+      <label>女性</label><input type="radio"  name="gender">
+      <!--選択式チェックボックスになります-->
+<br>
+
+      <label>チェックボックスの表示</label>
+      <input type="checkbox">
+      <!--チェックボックスを表示させます-->
+  <br>
+      <input type="submit" value="送信">
+      <!--送信ボタンの挿入になります-->
+
+      <input type="reset" value="リセット">
+      <!--リセットボタンの挿入になります-->
+  </form>
+<br>
+<br>  
+      <audio src="ichi.mp3" controls></audio>
+      <!--音声ファイルを再生、停止ボタンをつけて出力します-->
+      <!--上記コマンドはhtmlファイルと同フォルダ内に音声データがあることが前提です-->
+<br>
+      <video src="videotag.mp4" controls width="640"></video>
+      <!--動画ファイルを再生、停止ボタンをつけて出力します-->
+      <!--widthで幅、heightで高さを指定します-->
+      <!--上記コマンドはhtmlファイルと同フォルダ内に音声データがあることが前提です-->
+
+<br>
+ <h1>文の折りたたみタグ</h1>
+    <details>
+      <summary>もっとみる</summary>
+      ここに折りたたみで詳細説明情報を入れられます
+    </details>
+   
+
+<br>
+
+<h2>別のWEBページの情報を埋め込めます</h2>
+<iframe
+ src="ここに別WEBページのURLが入ります" width="幅"  height="高さ" >
+</iframe>
+
+  </main>
+
+
+
+
+  <footer>
+  
+  </footer>
+
+</body>
+
+</html>
